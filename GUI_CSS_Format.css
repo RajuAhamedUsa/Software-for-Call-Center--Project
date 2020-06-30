@@ -1,0 +1,132 @@
+/* The format of the entire foundation */
+
+.root {
+    -fx-background-image: url("https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F38670528%2F108919755319%2F1%2Foriginal.jpg?auto=compress&s=32c728ebfab7bb7cab9cf42307962b37");
+    -fx-background-size: cover;
+    -fx-font-family: "Courier New";
+    -fx-padding: 50;
+}
+
+#title {
+    -fx-font-weight: bolder;
+    -fx-opacity: 0.9;
+    -fx-font-size: 70;
+    -fx-underline: false;
+    -fx-effect: dropshadow(three-pass-box, whitesmoke, 45, 30, 0, 0);
+}
+
+/* Format for the text next to the input boxes */
+
+#te1 {
+    -fx-font-weight: bolder;
+    -fx-opacity: 0.9;
+    -fx-font-size: 20;
+    -fx-effect: dropshadow(three-pass-box, lightsteelblue, 10, 1, 0, 0);
+}
+
+#te2 {
+    -fx-font-weight: bolder;
+    -fx-opacity: 0.9;
+    -fx-font-size: 20;
+    -fx-effect: dropshadow(three-pass-box, lightsteelblue, 10, 1, 0, 0);
+}
+
+#te3 {
+    -fx-font-weight: bolder;
+    -fx-opacity: 0.9;
+    -fx-font-size: 20;
+    -fx-effect: dropshadow(three-pass-box, lightsteelblue, 10, 1, 0, 0);
+}
+
+/* Format for the column names inside the table */
+
+.label {
+    -fx-background-color: lightsteelblue;
+    -fx-background-radius: 0;
+    -fx-text-fill: black;
+    -fx-border-style: solid;
+    -fx-border-color: ghostwhite;
+    -fx-border-width: 1px;
+    -fx-font-weight: bold;
+    -fx-font-size: medium;
+}
+
+.label:hover {
+    -fx-background-color: linear-gradient(lightgray, lightsteelblue);
+}
+
+.label:pressed {
+    -fx-background-color: lightgray;
+}
+
+/* Format for the Search button */
+
+.button {
+    -fx-background-color: mistyrose;
+    -fx-text-fill: black;
+    -fx-background-radius: 20;
+    -fx-border-style: none;
+    -fx-font-size: large;
+    -fx-font-weight: bold;
+    -fx-effect: dropshadow(one-pass-box, black, 14, 0, 6, 0);
+}
+
+.button:hover {
+    -fx-background-color: linear-gradient(lightgray, mistyrose);
+}
+
+.button:pressed {
+    -fx-background-color: aliceblue, ghostwhite, aliceblue;
+}
+
+/* Format for the Reset button */
+
+#Reset {
+    -fx-background-color: lightcoral;
+}
+
+#Reset:hover {
+    -fx-background-color: linear-gradient(lightgray, lightcoral);
+}
+
+#Reset:pressed {
+    -fx-background-color: aliceblue, ghostwhite, aliceblue;
+}
+
+/* Format for the table itself */
+
+.table-view {
+    -fx-background-color: ghostwhite;
+    -fx-border-style: solid;
+    -fx-border-width: 8px;
+    -fx-opacity: 0.8;
+    -fx-effect: dropshadow(three-pass-box, gainsboro, 18, 0.5, 6, 0);
+}
+
+/* Format for the scrollbars */ 
+
+.scroll-bar:horizontal {
+    -fx-background-color: lightgray, gray, black;
+    -fx-border-style: none;
+    -fx-opacity: 0.5;
+    -fx-pref-width: 10;
+    -fx-pref-height: 1;
+    -fx-padding: 2;
+    -fx-background-radius: 2em;
+}
+
+.scroll-bar:vertical {
+    -fx-background-color: lightgray, gray, black;
+    -fx-border-style: none;
+    -fx-opacity: 0.5;
+    -fx-pref-width: 10;
+    -fx-pref-height: 1;
+    -fx-padding: 2;
+    -fx-background-radius: 2em;
+}
+
+.scroll-bar:horizontal .thumb, .scroll-bar:vertical .thumb {
+    -fx-background-color: derive(white,90%);
+    -fx-background-insets: 0, 0, 0;
+    -fx-background-radius: 0em;
+}
